@@ -1,0 +1,2 @@
+# 🔎 Binary search algorithm
+Initially, I was trying to  master Data Structures and Algorithms (DSA) thoroughly in order to work on this task. However, when I texted one of the mentors that there are multiple tasks to be done and DSA alone requires significant time investment, I was told that Praveshan is designed to introduce us to all computer science concepts and niches. The emphasis isn't on delving deeply into them but rather on learning enough to complete the tasks. Since then, I've had a clearer approach towards each task
