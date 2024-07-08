@@ -13,6 +13,7 @@ defmodule BinarySearch do
         mid;
       mid_value when mid_value > target ->
         binary_search(array, target, low, mid - 1);
+       _ ->
         binary_search(array, target, mid + 1, high)
     end
   end
