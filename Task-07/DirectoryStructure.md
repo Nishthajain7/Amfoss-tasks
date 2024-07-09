@@ -45,7 +45,20 @@
     - home_style.css
   - img
     - background.jpg
-
+- templates
+   - includes
+     - navbar.html
+   - base.html
+   - home.html
+- .vscode
+   - settings.json
+- .gitignore
+- LICENSE
+- README.md
+- manage.py
+- requirements.txt
+- seeder.py
+     
 
 
 
