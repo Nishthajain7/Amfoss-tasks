@@ -62,6 +62,6 @@ def draw_lines_single_image(image_paths, output_path):
 
 # Path to the images
 image_paths = [f"Layer {i}.png" for i in range (1,60)] + [f"Layer {i}.png" for i in range (71,98)]
-output_path = /home/nishtha/Documents
+output_path = '/home/nishtha/Documents/connected_dots.png'
 
 draw_lines_single_image(image_paths, output_path)
