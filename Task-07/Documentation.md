@@ -18,7 +18,7 @@ get_vote_count  | Returns the total number of votes
 get_result_dict  | Provides the poll results as a dictionary
 
 - **Choice**: Represents choices within a poll. Fields include a reference to the poll, choice text, creation date and timestamps. It has a method:<br>
-  **poll**: This is a foreign key field linking the choice to a specific question. The on_delete=models.CASCADE argument ensures that if     a question is deleted, all related choices are also deleted.<br>
+  **poll**: This is a foreign key field linking the choice to a specific question. The on_delete=models.CASCADE argument ensures that if a question is deleted, all related choices are also deleted.<br>
   **choice_text**: This is a character field with a maximum length of 200 characters.
   <br>
 - **Vote**: Represents a user's vote on a choice within a poll. Fields include references to the user, poll, choice, and timestamps.
