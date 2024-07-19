@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <header>
+                <div class="logo">
+                    <img src="Images/logo.jpg" alt="Foot Hut Logo">
+                    <h1>Foot Hut</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <span>$0.00</span>
+                    <img src="Images/cart.png" alt="Cart">
+                </div>
+            </header>
+            
+            <main>
+                <h2>Explore Products</h2>
+                <div class="product-grid">
+                    <!-- Product items will go here -->
+
+                    <div class="product-card">
+                        <img src="Images/AIR ZOOM PEGASUS.png" alt="Shoe 1">
+                        <div class="product-info">
+                            <span class="price">$370.00</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Converse Chuck Taylor All Star.png" alt="Shoe 2">
+                        <div class="product-info">
+                            <span class="price">$55.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Dr. Martens 1460.png" alt="Shoe 3">
+                        <div class="product-info">
+                            <span class="price">$150.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Nike Air Force 1 Low.png" alt="Shoe 4">
+                        <div class="product-info">
+                            <span class="price">$749.00</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Puma Suede Classic.png" alt="Shoe 5">
+                        <div class="product-info">
+                            <span class="price">$150.00</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Reebok Classic Leather.png" alt="Shoe 6">
+                        <div class="product-info">
+                            <span class="price">$75.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Timberland 6-Inch Premium Boot.png" alt="Shoe 7">
+                        <div class="product-info">
+                            <span class="price">$99.00</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="Images/Vans Old Skool .png" alt="Shoe 8">
+                        <div class="product-info">
+                            <span class="price">$60.00</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Repeat for other products -->
+                </div>
+            </main>
+        </div>
+        <div class="terminal">
+            <div class="terminal-window">
+                <div class="terminal-output"></div>
+                <div class="terminal-input">
+                    <span class="prompt">$</span>
+                    <input type="text" id="commandInput" placeholder="Enter command...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
