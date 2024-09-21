@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'superhero_list.dart'; // Import the list screen
+import 'superhero_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const SuperheroListScreen(), // Set the home screen to SuperheroListScreen
+      home: const SuperheroListScreen(),
     );
   }
 }

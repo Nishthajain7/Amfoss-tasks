@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'superhero.dart';
 import 'dart:convert';
-import 'package:flutter/services.dart'; // For rootBundle to load assets
-import 'superhero_details.dart'; // Adjust the path if necessary
+import 'package:flutter/services.dart'; 
+import 'superhero_details.dart';
 
 class SuperheroListScreen extends StatefulWidget {
   const SuperheroListScreen({super.key});
@@ -18,10 +18,9 @@ class _SuperheroListScreenState extends State<SuperheroListScreen> {
   @override
   void initState() {
     super.initState();
-    _loadSuperheroes(); // Call the method to load superheroes on init
+    _loadSuperheroes(); 
   }
 
-  // Method to load and parse superhero data from JSON
   void _loadSuperheroes() async {
   try {
     final String response = await rootBundle.loadString('lib/superhero.json');
@@ -35,7 +34,7 @@ class _SuperheroListScreenState extends State<SuperheroListScreen> {
   }
 }
 
-  // Method to filter superheroes based on search query
+  // Search
   void _filterSuperheroes(String query) {
     final filtered = _superheroes.where((superhero) {
       return superhero.name.toLowerCase().contains(query.toLowerCase());
@@ -81,7 +80,7 @@ class _SuperheroListScreenState extends State<SuperheroListScreen> {
 }
 
 
-  // Method to build the list of superheroes
+  //  Superheroes list
   Widget _buildSuperheroList() {
     return ListView.builder(
       itemCount: _filteredSuperheroes.length,

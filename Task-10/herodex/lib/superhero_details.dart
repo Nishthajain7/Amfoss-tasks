@@ -18,7 +18,6 @@ class SuperheroDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Display large image
             Center(child: Image.network(superhero.getImageUrl('lg') ?? '',)),
             const SizedBox(height: 16.0),
             
@@ -67,7 +66,7 @@ class SuperheroDetailsScreen extends StatelessWidget {
       child: Row(
         children: [
         Expanded(
-          flex: 2, // Adjust the flex based on how much space you need
+          flex: 2,
           child: Text(
             label,
             style: const TextStyle(
@@ -79,7 +78,7 @@ class SuperheroDetailsScreen extends StatelessWidget {
           flex: 3,
           child: Text(
             value,
-            textAlign: TextAlign.left, // Align the value left
+            textAlign: TextAlign.left,
           ),
         ),
       ],

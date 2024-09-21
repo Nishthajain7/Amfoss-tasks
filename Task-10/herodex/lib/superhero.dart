@@ -7,7 +7,6 @@ class Superhero {
   final Work work;
   final Connections connections;
 
-  // Initialize final variables in the constructor
   Superhero({
     required this.name,
     required this.id,
@@ -18,12 +17,10 @@ class Superhero {
     required this.connections
   });
 
-  // getImageUrl method
   String? getImageUrl(String size) {
       return images[size] ?? images['md']; 
 }
 
-  // Create fromJson factory method
   factory Superhero.fromJson(Map<String, dynamic> json) {
     return Superhero(
       name: json['name'] as String,
@@ -86,7 +83,6 @@ class Biography {
     required this.alignment,
   });
 
-  // Create fromJson factory method
   factory Biography.fromJson(Map<String, dynamic> json) {
     return Biography(
       fullName: json['fullName'] ?? 'Unknown',
@@ -109,7 +105,6 @@ class Work {
     required this.base,
   });
 
-  // Create fromJson factory method
   factory Work.fromJson(Map<String, dynamic> json) {
     return Work(
       occupation: json['occupation'] ?? 'Unknown',
@@ -127,7 +122,6 @@ class Connections{
     required this.relatives
   });
 
-  // Create fromJson factory method
   factory Connections.fromJson(Map<String, dynamic> json) {
     return Connections(
       groupAffiliation: json['occupation'] ?? 'Unknown',
