@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart'; 
 import 'superhero_details.dart';
 
+
 class SuperheroListScreen extends StatefulWidget {
   const SuperheroListScreen({super.key});
 
@@ -105,3 +106,5 @@ class _SuperheroListScreenState extends State<SuperheroListScreen> {
     );
   }
 }
+
+// powerstats

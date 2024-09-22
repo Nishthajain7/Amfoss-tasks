@@ -1,6 +1,7 @@
 class Superhero {
-  final String name;
   final int id;
+  final String name;
+  final Powerstats powerstats;
   final Map<String, String> images;
   final Appearance appearance;
   final Biography biography;
@@ -10,6 +11,7 @@ class Superhero {
   Superhero({
     required this.name,
     required this.id,
+    required this.powerstats,
     required this.images,
     required this.appearance,
     required this.biography,
@@ -29,7 +31,8 @@ class Superhero {
       appearance: Appearance.fromJson(json['appearance'] ?? {}),
       biography: Biography.fromJson(json['biography'] ?? {}),
       work: Work.fromJson(json['work'] ?? {}),
-      connections: Connections.fromJson(json['connections'] ?? {})
+      connections: Connections.fromJson(json['connections'] ?? {}),
+      powerstats: Powerstats.fromJson(json['powerstats'])
     );
   }
 }
@@ -129,3 +132,33 @@ class Connections{
     );
   }
 }
+
+class Powerstats {
+  final int intelligence;
+  final int strength;
+  final int speed;
+  final int durability;
+  final int power;
+  final int combat;
+
+  Powerstats({
+    required this.intelligence,
+    required this.strength,
+    required this.speed,
+    required this.durability,
+    required this.power,
+    required this.combat,
+  });
+
+  factory Powerstats.fromJson(Map<String, dynamic> json) {
+    return Powerstats(
+      intelligence: json['intelligence'] ?? 0,
+      strength: json['strength'] ?? 0,
+      speed: json['speed'] ?? 0,
+      durability: json['durability'] ?? 0,
+      power: json['power'] ?? 0,
+      combat: json['combat'] ?? 0,
+    );
+  }
+}
+
